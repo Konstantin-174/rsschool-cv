@@ -25,38 +25,109 @@
     flex-basis: 50%;
 }
 
+.link {
+    text-decoration: none;
+    color: #99CC00;
+}
+
+.link:hover {
+    font-weight: bold;
+    color: #33FFFF;
+    transition: 0.3s;
+}
+
+.wrapper__list {
+    margin-left: 15px;
+}
+
+.list-item {
+    margin-bottom: 5px;
+}
+
 .container {
     position: relative;
     width: 100%;
     max-width: 1000px;
     margin: 30px;
+    padding: 20px;
     background-color: #999999;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 3px solid #33FFFF;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 .profile-info {
     display: flex;
+    padding: 40px;
 }
 
-.profile-info .profile-info__avatar {
+.profile-info .profile-info__name {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
 
+.profile-info__profession {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.profile-info__text {
+    font-size: 18px;
 }
 
 .profile-info .profile-info__img {
     width: 300px;
     height: 350px;
     object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .main {
     display: flex;
+    border-top: 2px solid #33FFFF;
+    border-bottom: 2px solid #33FFFF;
+}
+
+.main__education-wrapper {
+    padding: 40px;
+    border-right: 1px solid #33FFFF;
+}
+
+.main__experience-wrapper {
+    padding: 40px;
+    border-left: 1px solid #33FFFF;
+}
+
+.experience-wrapper__item {
+    display: flex;
+}
+
+.experience-wrapper__date {
+    margin-right: 10px;
+}
+
+.experience-wrapper__subtitle {
+    font-weight: bold;
 }
 
 .footer {
     display: flex;
+    padding-top: 10px;
+    align-items: center;
     justify-content: space-between;
 }
+.item_logo {
+    width: 75px;
+    height: 30px;
+    background: url("./assets/rs_school_js.svg") no-repeat;
+}
+
